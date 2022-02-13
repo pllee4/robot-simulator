@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  [push, pull_request]
+
+jobs:
+  bionic-build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: sudo apt update && sudo apt install -y libeigen3-dev libsdl2-dev libsdl2-ttf-dev
+      - name: Build
+        run: mkdir build && cd build && cmake .. && cmake --build .  
+
+  focal-build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: sudo apt update && sudo apt install -y libeigen3-dev libsdl2-dev libsdl2-ttf-dev
+      - name: Build
+        run: mkdir build && cd build && cmake .. && cmake --build .   
