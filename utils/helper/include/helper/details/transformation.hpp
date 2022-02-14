@@ -11,7 +11,7 @@
 
 #include <vector>
 
-#include "types.hpp"
+#include "types/types.hpp"
 
 std::vector<Vector2> TransformPoints(const std::vector<Vector2>& points,
                                      const Vector2& position,

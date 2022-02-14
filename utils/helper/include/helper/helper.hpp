@@ -11,7 +11,7 @@
 
 #include <vector>
 
-#include "details/types.hpp"
+#include "types/types.hpp"
 
 double WrapAngle(double angle);
 double CalculateMean(const std::vector<double>& dataset);
