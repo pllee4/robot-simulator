@@ -15,7 +15,6 @@
 #include "helper/details/transformation.hpp"
 
 namespace pllee4 {
-namespace model {
 BeaconMap::BeaconMap() {
   std::mt19937 rand_gen;
   std::uniform_real_distribution<double> pos_dis(-500.0, 500.0);
@@ -60,5 +59,4 @@ void BeaconMap::Render(Display& disp) const {
     disp.DrawLines(OffsetPoints(beacon_lines, Vector2(beacon.x, beacon.y)));
   }
 }
-}  // namespace model
 }  // namespace pllee4

@@ -13,7 +13,6 @@
 
 namespace pllee4 {
 class Display;
-namespace model {
 struct BeaconData {
   double x{}, y{};
   int id{-1};
@@ -39,6 +38,5 @@ class BeaconMap {
  private:
   std::vector<BeaconData> beacon_map_;
 };
-}  // namespace model
 }  // namespace pllee4
 #endif /* BEACON_HPP */
