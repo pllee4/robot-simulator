@@ -16,7 +16,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package (Eigen3 3.3 REQUIRED NO_MODULE)
 
-# add_subdirectory(app)
+add_subdirectory(app)
 add_subdirectory(modules)
 add_subdirectory(src)
 add_subdirectory(utils)
