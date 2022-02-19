@@ -6,3 +6,4 @@ target_link_libraries(display
     Eigen3::Eigen)
 target_include_directories(display PUBLIC
 $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)
+target_compile_definitions(display PRIVATE "ASSET_PATH=\"${PROJECT_SOURCE_DIR}/assets\"")
