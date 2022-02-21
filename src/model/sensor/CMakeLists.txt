@@ -3,6 +3,6 @@ add_library(sensor STATIC
   src/gyro_sensor.cpp
   src/lidar_sensor.cpp
 )
-target_link_libraries(sensor PUBLIC beacon helper)
+target_link_libraries(sensor PRIVATE beacon helper)
 target_include_directories(sensor PUBLIC
 $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)

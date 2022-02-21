@@ -11,7 +11,6 @@
 
 #include <queue>
 
-#include "helper/helper.hpp"
 #include "robot/details/motion_cmd_base.hpp"
 #include "robot/details/bicycle_model.hpp"
 #include "types/types.hpp"
