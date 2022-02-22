@@ -1,4 +1,5 @@
 # Robot-simulator
+[![Build](https://github.com/pllee4/robot-simulator/actions/workflows/build.yml/badge.svg)](https://github.com/pllee4/robot-simulator/actions/workflows/build.yml)
 
 - Repository for 2D robot simulator
 
